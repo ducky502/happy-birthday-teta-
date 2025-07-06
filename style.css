@@ -1,0 +1,44 @@
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+      background-color: #fefefe;
+    }
+
+    .arabic-writing-card {
+      text-align: center;
+      padding: 20px;
+      font-size: 1.5rem;
+      direction: rtl;
+    }
+
+    .bears {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 90vw;
+      max-height: 70vh;
+    }
+
+    .bears img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .arabic-writing-card {
+        font-size: 1.2rem;
+      }
+
+      .bears {
+        max-width: 95vw;
+        max-height: 60vh;
+      }
+    }
